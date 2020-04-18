@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta chart="utf-8">
+    <title>test</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background: #333;
+            color: #fff;
+        }
+
+        nav ul {
+            display: flex;
+            margin: 0;
+            list-style-type: none;
+        }
+
+        nav a {
+            display: block;
+            padding: 8px 24px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background: #666;
+        }
+
+        header {
+            height: 100px;
+            background: url(./wall.jpg) center/cover;
+        }
+
+        main>h1 {
+            font-weight: normal;
+            font-size: 1.5em;
+            text-align: center;
+            margin: 32px 0 32px;
+        }
+
+        main {
+            min-height: 360px;
+        }
+
+        .form-container{
+            box-sizing: border-box;
+            background: #eee;
+            width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+
+        }
+
+        label{
+            display: inline-block;
+            width: 120px;
+        }
+
+        input{
+            width: 180px;
+            height: 1.5em;
+        }
+
+        textarea{
+            vertical-align:middle;
+            width: 180px;
+            height: 5em;
+        }
+
+        .form-item{
+            margin-top: 30px;
+        }
+
+        button{
+            margin-left: 124px;
+        }
+
+        footer {
+            background: #666;
+            text-align: center;
+            margin-top: 32px;
+            padding-top: 32px;
+            color: #fff;
+            height: 100vh;
+        }
+
+        @media screen and (max-width: 640px){
+            .form-container{
+                background: rosybrown;
+            }
+            label{
+                display: block;
+                margin-top: 10px;
+            }
+            .form-item{
+                margin-top: 0px;
+            }
+            button{
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Service</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="" style="background: #666;">Contact Us</a></li>
+        </ul>
+    </nav>
+    <header>
+    </header>
+    <main>
+        <h1>お問合せフォーム</h1>
+        <section class="form-container">
+            <form method="post" action="confirm.php">
+                <div>
+                    <label>氏名</label>
+                    <input type="text" class="form-item">
+                </div>
+                <div>
+                    <label>Email</label>
+                    <input type="text" class="form-item">
+                </div>
+                <div>
+                    <label>お問合せ内容</label>
+                    <textarea class="form-item"></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="form-item">確認する</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        footer
+    </footer>
+</body>
+
+</html>
